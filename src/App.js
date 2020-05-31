@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import MyContext from './context';
+import './app.css';
 
 function App() {
+
+  const [myState, setMystate] = useState([]);
+
+  useEffect(()=>{
+    fetch("https://yts.mx/api/v2/list_movies.json")
+      .then((data)=>{
+        return data.json()
+      })
+      .then((dataJSON)=>{
+        setMystate(dataJSON)
+      })
+  },[])
+
+  const state = {myState, setMystate}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <MyContext.Provider value={myState}>
+      <header>
+        <div>
+          <img src="https://yts.mx/assets/images/website/logo-YTS.svg" alt="logo-yts" />
+          <p>HD movies at the smallest file size</p>
+        </div>
+
+        <div>
+          <input  />
+          <ul>
+            <li>Home</li>
+            <li>4K</li>
+            <li>Browse Movies</li>
+          </ul>
+        </div>
       </header>
-    </div>
+    </MyContext.Provider>
   );
 }
 

@@ -1,0 +1,30 @@
+//COLORES
+$color-header: #1d1d1d;
+$color-border-header: #2f2f2f;
+$color-gray-ligth: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+  color: $color-gray-ligth;
+}
+
+
+header {
+  display: flex;
+  height: 7vh;
+  background-color: $color-header;
+  border-bottom: $color-border-header;
+
+  position: fixed;
+  width: 100%;
+}
