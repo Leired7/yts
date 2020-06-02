@@ -1,0 +1,34 @@
+
+.body {
+
+  height: 61vh;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  border: 1px solid red;
+
+  h1 {
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
+    font-size: 4.7rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    width: 65rem;
+    margin: 0 auto;
+    color: #ccc;
+    margin-bottom: 1.5%;
+  }
+
+  b {
+    color: #428bca;
+    font-size: 1.6rem;
+  }
+
+  &__lower {
+    height: 50vh;
+  
+  }
+}
+

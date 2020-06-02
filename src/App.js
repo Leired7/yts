@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import MyContext from './context';
 import './app.css';
+import Header from './Components/Header/Header';
+import Body from './Components/Body/Body';
+
 
 function App() {
 
@@ -20,21 +23,8 @@ function App() {
 
   return (
     <MyContext.Provider value={myState}>
-      <header>
-        <div>
-          <img src="https://yts.mx/assets/images/website/logo-YTS.svg" alt="logo-yts" />
-          <p>HD movies at the smallest file size</p>
-        </div>
-
-        <div>
-          <input  />
-          <ul>
-            <li>Home</li>
-            <li>4K</li>
-            <li>Browse Movies</li>
-          </ul>
-        </div>
-      </header>
+      <Header />
+      <Body />
     </MyContext.Provider>
   );
 }

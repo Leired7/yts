@@ -1,0 +1,96 @@
+//COLORES
+$color-header: #1d1d1d;
+$color-border-header: #2f2f2f;
+$color-font: #fff;
+$color-header-menu: #919191;
+$color-verde: #6ac045;
+
+
+
+.header {
+  height: 7vh;
+  background-color: $color-header;
+  color: $color-font;
+  width: 100%;
+  border-bottom: 1px solid $color-border-header;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+
+    h2 {
+      color: $color-header-menu;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-left: 5%;
+      width: 40rem;
+      height: 2rem;
+
+      @media (max-width: 1450px) {
+        display: none;
+      }
+    }
+
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70rem;
+    
+
+    input {
+      height: 40%;
+      border-radius: 2rem;
+      border: 1px solid gray;
+      background-color: $color-header;
+      color: $color-header-menu;
+      font-weight: 700;
+      text-align:center;
+      width: 24rem;
+
+      &::placeholder {
+        color: $color-header-menu;
+        font-weight: 700;
+        
+      }
+     
+    }
+
+    ul {
+      display: flex;
+      width: 60rem;
+      padding-left:2rem;
+
+      li {
+        list-style-type: none;
+        color: $color-header-menu;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-left: 2rem;
+        cursor: pointer;
+      
+
+        &:hover {
+          color: white;
+          transition: .2s all;
+        }
+
+      }
+      .k {
+        color: $color-verde;
+
+        &:hover {
+          color: $color-verde;
+        }
+      }
+    }
+  }
+}
+

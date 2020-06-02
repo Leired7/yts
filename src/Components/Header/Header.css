@@ -1,0 +1,117 @@
+.header {
+  height: 7vh;
+  background-color: #1d1d1d;
+  color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #2f2f2f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5%;
+}
+
+.header__left h2 {
+  color: #919191;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 5%;
+  width: 40rem;
+  height: 2rem;
+}
+
+@media (max-width: 1450px) {
+  .header__left h2 {
+    display: none;
+  }
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70rem;
+}
+
+.header__right input {
+  height: 40%;
+  border-radius: 2rem;
+  border: 1px solid gray;
+  background-color: #1d1d1d;
+  color: #919191;
+  font-weight: 700;
+  text-align: center;
+  width: 24rem;
+}
+
+.header__right input::-webkit-input-placeholder {
+  color: #919191;
+  font-weight: 700;
+}
+
+.header__right input:-ms-input-placeholder {
+  color: #919191;
+  font-weight: 700;
+}
+
+.header__right input::-ms-input-placeholder {
+  color: #919191;
+  font-weight: 700;
+}
+
+.header__right input::placeholder {
+  color: #919191;
+  font-weight: 700;
+}
+
+.header__right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60rem;
+  padding-left: 2rem;
+}
+
+.header__right ul li {
+  list-style-type: none;
+  color: #919191;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.header__right ul li:hover {
+  color: white;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.header__right ul .k {
+  color: #6ac045;
+}
+
+.header__right ul .k:hover {
+  color: #6ac045;
+}
+/*# sourceMappingURL=Header.css.map */
