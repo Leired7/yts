@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import "./Header.scss"
+import "./Header.css"
 
 const Header = () => {
   return ( 
