@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import "./Body.scss";
+import Peliculas from '../Peliculas/Peliculas';
 
 const Body = () => {
   return (
@@ -14,10 +15,11 @@ const Body = () => {
         <b>
           IMPORTANT - YTS.MX is the only new official domain for YIFY Movies
         </b>
-        <p>★ Popular Downloads</p>
+        <p className="popular-downloads"><span>★</span> Popular Downloads</p>
+        <hr></hr>
       </div>
-      <div className="body__lower">
-
+      <div className="body__popular">
+        <Peliculas />
       </div>
     </Fragment>
   );

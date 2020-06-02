@@ -1,0 +1,23 @@
+.pelicula {
+  
+  margin-left: 3%;
+  
+
+  img {
+    height: 80%;
+    width: 100%;
+    border: 5px solid white;
+    border-radius: .4rem;
+  }
+
+  &__titulo {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__año {
+    color: #919191;
+    font-size: 1.4rem;
+  }
+}

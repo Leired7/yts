@@ -1,9 +1,8 @@
 .body {
-  height: 61vh;
+  height: 31vh;
   text-align: center;
   color: #fff;
   font-size: 2rem;
-  border: 1px solid red;
 }
 
 .body h1 {
@@ -25,7 +24,35 @@
   font-size: 1.6rem;
 }
 
-.body__lower {
-  height: 50vh;
+.body span {
+  color: #6ac045;
+  font-size: 3rem;
+}
+
+.body .popular-downloads {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2%;
+}
+
+.body hr {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.body__popular {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
 }
 /*# sourceMappingURL=Body.css.map */

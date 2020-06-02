@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.pelicula {
+  margin-left: 3%;
+}
+
+.pelicula img {
+  height: 80%;
+  width: 100%;
+  border: 5px solid white;
+  border-radius: .4rem;
+}
+
+.pelicula__titulo {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.pelicula__año {
+  color: #919191;
+  font-size: 1.4rem;
+}
+/*# sourceMappingURL=Peliculas.css.map */
