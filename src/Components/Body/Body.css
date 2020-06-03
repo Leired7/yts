@@ -119,4 +119,32 @@
   cursor: pointer;
   font-size: 2rem;
 }
+
+.latest {
+  height: 90vh;
+  background-color: #171717;
+}
+
+.latest__title {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.latest__title h2, .latest__title p {
+  margin-top: 2%;
+}
+
+.latest__title h2 {
+  font-size: 1.8rem;
+}
+
+.latest__title p {
+  font-size: 1.4rem;
+  color: #919191;
+}
 /*# sourceMappingURL=Body.css.map */

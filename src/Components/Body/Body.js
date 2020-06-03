@@ -35,6 +35,14 @@ const Body = () => {
         </div>
       </section>
 
+      <section className="latest">
+        <div className="latest__title">
+          <h2>Latest YIFI Movies Torrents</h2>
+          <p>Browse All</p>
+        </div>
+
+      </section>
+
 
     </Fragment>
   );

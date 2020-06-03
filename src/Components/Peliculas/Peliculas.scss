@@ -1,6 +1,12 @@
 .pelicula {
   
   margin-left: 3%;
+  transition: all .2s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .2;
+  }
   
 
   img {

@@ -1,6 +1,13 @@
 @charset "UTF-8";
 .pelicula {
   margin-left: 3%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.pelicula:hover {
+  opacity: .2;
 }
 
 .pelicula img {
