@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import "./Body.css";
 import Peliculas from '../Peliculas/Peliculas';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faDownload} from '@fortawesome/free-solid-svg-icons';
 
 const Body = () => {
   return (
@@ -22,6 +24,16 @@ const Body = () => {
       <div className="body__popular">
         <Peliculas />
       </div>
+
+      <section className="warning">
+        <div className="warning__container">
+          <h1>Warning! Download only with VPN...</h1>
+          <hr />
+          <p>Downloading torrents is risky for you: your IP and leaked private data being actively tracked by your ISP and Government Agencies. Protect yourself from expensive lawsuits and fines NOW! You must use a VPN like Express. It is the only way to download torrents fully anonymous by encrypting all traffic with zero logs. </p>
+          <h3>″Do not risk it! Protect yourself right now by downloading Express VPN″ - William </h3>
+          <button><FontAwesomeIcon icon={faDownload } />   Download Express VPN</button>
+        </div>
+      </section>
 
 
     </Fragment>
